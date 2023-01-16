@@ -26,6 +26,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Climate Change Web App</title>
    <style>
+      @import "nord/nord.css";
       @font-face {
       font-family: "Springtime-Romance";
       src: url("./fonts/Springtimeromance.ttf");
@@ -41,8 +42,10 @@
         /* display: flex; */
         align-items: center;
         /* background: linear-gradient(to top left, #6e28b4, #7dd56f); */
-        background-color: rgb(207, 150, 255);
-        color: white;
+        /* background-color: rgb(207, 150, 255);
+        color: white; */
+        background-color: var(--nord0);
+        color: var(--nord8);
         font-size: 22px;
       }
       h1 {
@@ -62,7 +65,7 @@
         text-align: center;
         font-family: 'Roboto', sans-serif;
         overflow: hidden;
-        background-color: #333;
+        background-color: var(--nord1);
       }
 
       .topnav a {
@@ -75,12 +78,13 @@
       }
 
       .topnav a:hover {
-        background-color: #ddd;
-        color: black;
+        background-color: var(--nord2);
+        color: #ddd;
       }
 
       .topnav a.active {
-        background-color: rgb(176, 80, 255);
+        /* background-color: rgb(176, 80, 255); */
+        background-color: var(--nord7);
         color: white;
       }
       
@@ -106,8 +110,9 @@
     <div class="footer">
       <footer>
         <p>Created by rexhent</p>
+        <p>Uses Nord colour scheme made by Arctic Ice Studio</p>
       </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
