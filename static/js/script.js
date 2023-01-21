@@ -17,4 +17,10 @@
 
 let greeting = 'Hello World';
 console.log(greeting);
-// document.getElementById("title").innerHTML = greeting;
+document.getElementById("title").innerHTML = greeting;
+
+function myFunction() {
+    let userInput = document.querySelector("#userInput")
+    console.log(userInput.value)
+    document.getElementById("title").innerHTML = userInput.value;
+}
