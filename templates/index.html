@@ -25,7 +25,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Climate Change Web App</title>
-   <style>
+    <link href="{{ url_for('static', filename='stylesheets/style.css') }}" rel="stylesheet" type="text/css" />
+   <!-- <style>
       @import "nord/nord.css";
       @font-face {
       font-family: "Springtime-Romance";
@@ -88,7 +89,7 @@
         color: white;
       }
       
-    </style>
+    </style> -->
   </head>
   <body>
     <div id="topnav">
@@ -113,6 +114,6 @@
         <p>Uses Nord colour scheme made by Arctic Ice Studio</p>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>

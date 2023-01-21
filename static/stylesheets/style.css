@@ -1,0 +1,61 @@
+@import "nord/nord.css";
+@font-face {
+font-family: "Springtime-Romance";
+src: url("./fonts/Springtimeromance.ttf");
+}
+@font-face {
+font-family: "Noto-Serif-R";
+src: url("./fonts/NotoSerif-Regular.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&family=Roboto&display=swap');
+body {
+  font-family: 'Noto-Serif-R';
+  height: 100vh;
+  /* display: flex; */
+  align-items: center;
+  /* background: linear-gradient(to top left, #6e28b4, #7dd56f); */
+  /* background-color: rgb(207, 150, 255);
+  color: white; */
+  background-color: var(--nord0);
+  color: var(--nord8);
+  font-size: 22px;
+}
+h1 {
+  font-family: 'Springtime-Romance', sans-serif;
+  font-size: 65px;
+  line-height: 1.3;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+p {
+  text-align: center;
+}
+
+.topnav {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-color: var(--nord1);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: var(--nord2);
+  color: #ddd;
+}
+
+.topnav a.active {
+  /* background-color: rgb(176, 80, 255); */
+  background-color: var(--nord7);
+  color: white;
+}
