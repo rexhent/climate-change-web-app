@@ -114,8 +114,15 @@
       <footer>
         <p>Created by rexhent</p>
         <p>Uses Nord colour scheme made by Arctic Ice Studio</p>
+        <p>{{ hello }}</p>
       </footer>
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<!--     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+ -->    <script>
+      const hello = '{{ hello }}';
+      console.log(hello); 
+      // alert(hello);
+      
+    </script>
   </body>
 </html>

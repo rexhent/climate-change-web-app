@@ -15,12 +15,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-let greeting = 'Hello World';
-console.log(greeting);
-document.getElementById("title").innerHTML = greeting;
+let hey = '{{ hello }}';
+// let greeting = 'Hello World';
+console.log(hey);
+/* document.getElementById("title").innerHTML = greeting;
 
 function myFunction() {
-    let userInput = document.querySelector("#userInput")
-    console.log(userInput.value)
+    let userInput = document.querySelector("#userInput");
+    console.log(userInput.value);
     document.getElementById("title").innerHTML = userInput.value;
-}
+} */
